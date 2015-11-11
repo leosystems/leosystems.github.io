@@ -1,0 +1,12 @@
+---
+---
+
+# humanstxt.org
+
+# Author
+
+  {{ site.author }}{% if site.twitter %} -- @{{ site.twitter }}{% endif %}
+
+# Technologies
+
+  HTML5, CSS3, JavaScript, Jekyll

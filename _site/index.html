@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      
+      Low Earth Orbit
+    </title>
+    <meta name="author" content="Javier Peralta Muñoz">
+    <meta name="description" content="All about Low Earth Orbit systems">
+    <meta name="keywords" content="satellites">
+    <meta name="robots" content="noodp,noydir">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Header -->
+      <header class="header">
+        <h1>
+          Low Earth Orbit
+        </h1>
+        <p>
+          <img class="img-thumbnail logo" src="/assets/img/logo.png" width="150" height="150" alt="Low Earth Orbit">
+        </p>
+        <p>All about Low Earth Orbit systems</p>
+        <a class="sr-only" href="#content">Skip to main content</a>
+        <ul class="list-inline">
+          <li>
+            <i class="fa fa-home text-success"></i>
+            <a href="/">Home</a>
+          </li>
+          
+          
+          
+          
+          <li>
+            <i class="fa fa-flask text-success"></i>
+            <a href="/calculator/">Calculator</a>
+          </li>
+          
+          
+          
+          <li>
+            <i class="fa fa-picture-o text-success"></i>
+            <a href="/history/">History of satellites</a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li>
+            <i class="fa fa-link text-success"></i>
+            <a href="/links/">References</a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li>
+            <i class="fa fa-pencil text-success"></i>
+            <a href="/test/">Test yourself</a>
+          </li>
+          
+          
+          <li>
+            <i class="fa fa-github text-success"></i>
+            <a href="https://github.com/leosystems">GitHub</a>
+          </li>
+        </ul>
+      </header>
+
+      <hr>
+
+      <!-- Content -->
+      <main id="content">
+        <h2></h2>
+        <p class="lead"></p>
+        <h2>Some basic terms</h2>
+
+<p>Extraterrestrial studies need some foreword, therefore in order not to find ourselves lost with concepts that seem to be <em>out of this world</em>, let&#39;s give some background knowledge.</p>
+
+<h3>Space debris</h3>
+
+<p>Space debris are all man made objects including fragments and elements thereof, in Earth orbit or re-entering the atmosphere, that are non functional.</p>
+
+<h3>Spacecraft, launch vehicles and orbital stages</h3>
+
+<h4>Spacecraft</h4>
+
+<p>An orbiting object designed to perform a specific function or mission (e.g. communications, navigation or Earth observation).  A spacecraft that can no longer fulfil its intended mission is considered non-functional.  (Spacecraft in reserve or standby modes awaiting possible reactivation are considered functional.)  </p>
+
+<h4>Launch vehicle</h4>
+
+<p>Any vehicle constructed for ascent to outer space, and for placing one or more objects in outer space, and any sub-orbital rocket.</p>
+
+<h4>Launch vehicle orbital stages</h4>
+
+<p>Any stage of a launch vehicle left in Earth orbit.    </p>
+
+<h3>Orbits and protected regions</h3>
+
+<h4>Equatorial radius of the Earth</h4>
+
+<p>The equatorial radius of the Earth is taken as \(6,378\) km and this radius is used as the reference for the Earth&#39;s surface from which the orbit regions are defined.</p>
+
+<h4>Protected regions</h4>
+
+<p>Any activity that takes place in outer space should be performed while recognizing the unique nature of the following regions:</p>
+
+<ol>
+<li><p>Low Earth Orbit (LEO) region: spherical region that extends from the Earth&#39;s surface up to an altitude of \(2,000\) km.</p></li>
+<li><p>Geosynchronous region: a segment of the spherical shell defined by the following:</p>
+
+<ul>
+<li>Lower altitude \(=\) geostationary altitude \(-200\) km.</li>
+<li>Upper altitude \(=\) geostationary altitude \(+200\) km.</li>
+<li>\(-15 \mbox{ degrees }  \leq \mbox{ latitude } \leq +15 \mbox{ degrees }\)</li>
+</ul></li>
+</ol>
+
+<p><img class="centered" src="/assets/img/art/regions.jpg" /></p>
+
+<h4>Geostationary Earth Orbit (GEO)</h4>
+
+<p>Earth orbit having zero inclination and zero eccentricity, whose orbital period is equal to the Earth&#39;s sidereal period. The altitude of this unique circular orbit is close to \(35,786\) km.</p>
+
+<h4>Geostationary Transfer Orbit (GTO)</h4>
+
+<p>An Earth orbit which is or can be used to transfer spacecraft or orbital stages from lower orbits to the geosynchronous region.  Such orbits typically have perigees within LEO region and apogees near or above GEO.</p>
+
+<h2>LEO orbital parameters</h2>
+
+<h3>Low Earth circular orbits</h3>
+
+<p>A circular orbit is mathematically the simplest orbit, although it can be difficult to achieve exactly in practice. Only one parameter is needed to specify the size of the orbit, and that is the radius \(r\), the constant distance from the centre of the Earth to the satellite.</p>
+
+<p>If the radius of the Earth is denoted by \(R_e\), then the altitude or height of the orbit (and the satellite) above the Earth&#39;s surface is \(h = r - R_e\).</p>
+
+<p>Unfortunately for our simplicity, the radius of the Earth is not a constant, varying from \(6357\) km at the poles to \(6378\) km at the equator. If our satellite has a low inclination (ie it spends most of its time near the equator), then we might use the equatorial radius. Otherwise we could use the mean radius of \(6371\) km. Of course, for high accuracy applications we need to consider the varying shape of the Earth at each point beneath the satellite&#39;s orbit.</p>
+
+<p>If we know the period of the satellite (the time it takes to make one complete orbit around the Earth) we can compute its height, and vice versa. We can also compute its orbital velocity (\(v\)) and a quantity known as its mean motion, the number of orbits it completes in one day.</p>
+
+<p>Isaac Newton provided the formulae we need for these calculations. Starting with the famous second law of motion \(F = m\cdot a\) where \(F\) is the force on the satellite, \(m\) is its mass and \(a\) is its acceleration.</p>
+
+<p>Newton&#39;s law of gravitation \(F = G \frac{M\cdot m}{r^2}\) is the required force that the Earth exerts on the satellite.</p>
+
+<p>A body moving in a circle is actually being accelerated toward the centre of the circle (by the Earth&#39;s gravitational force). The acceleration is referred to as the centripetal (directed towared the centre) acceleration, and the force that produces the acceleration is known as the centripetal force.</p>
+
+<p>The magnitude of the acceleration is given by \(a = \frac{v^2}{r}\).</p>
+
+<p>If we substitute for the force on the left hand side of Newton&#39;s second law and the acceleration on the right hand side we end up with:</p>
+
+<p>$$G \frac{M\cdot m}{r^2} = m\cdot\frac{v^2}{r}$$,</p>
+
+<p>where \(G\) is the Universal Constant of Gravitation and \(M\) is the mass of the Earth.</p>
+
+<p>We now note that the mass of the satellite (\(m\)) disappears from the equation, and we are left with an expression relating the orbital velocity to the orbital radius:</p>
+
+<p>$$v = \sqrt{\frac{G\cdot M}{r}}$$</p>
+
+<p>The orbital period (T) may be computed by dividing the distance travelled in one orbit by the velocity. The former quantity is the circumference of the circle.</p>
+
+<p>$$T = \frac{2\pi r}{v}$$</p>
+
+<p>which after substitution for \(v\) becomes:</p>
+
+<p>$$T = 2\pi \sqrt{\frac{r^3}{G\cdot M}}$$</p>
+
+<p>Lastly, the mean motion (\(n\)) of the satellite, which is defined as the number of orbits traversed in one complete day which is 86400 seconds long, given by:</p>
+
+<p>$$n =\frac{86400}{T}$$</p>
+
+<p>Note that with the exception of \(n\), all quantities are strict SI units. Distances are in metres, velocities in metres/sec and times in seconds. The exception, the mean motion, is in revolutions per day.</p>
+
+<p>In this system of units, the values for the gravitational constant and the mass of the Earth is given as:</p>
+
+<p>$$G = 6.67259\cdot 10^{-11} \mbox{m}^3\mbox{kg}^{-1}\mbox{s}^{-2},$$</p>
+
+<p>with \(M = 5.9736\cdot 10^{24}\) kg. It is interesting to note that the uncertainty in the measured value for \(G\) is larger than the uncertainty in the measurement of the product of \(G\) times \(M\), which is given as:</p>
+
+<p>$$G\cdot M = 3.9860 \times \cdot 10^{14} \mbox{m}^3\mbox{s}^{-2}$$</p>
+
+<p>A table of values computed from the above formulae is shown below. Note that the units have been converted into the more typically used quantities before display.</p>
+<div class="highlight"><pre><code class="language-" data-lang="">           LEO CIRCULAR ORBIT PARAMETERS
+
+       Height   Velocity   Period   Mean Motion
+        (km)     (km/s)    (mins)    (revs/day)
+
+         200      7.79       88.4      16.30
+         300      7.73       90.4      15.93
+         400      7.67       92.4      15.58
+         500      7.62       94.5      15.24
+         600      7.56       96.5      14.92
+         700      7.51       98.6      14.60
+         800      7.46      100.7      14.30
+         900      7.40      102.8      14.00
+        1000      7.35      105.0      13.72
+        1100      7.30      107.1      13.44
+        1200      7.26      109.3      13.18
+        1300      7.21      111.4      12.92
+        1400      7.16      113.6      12.67
+        1500      7.12      115.8      12.43
+</code></pre></div>
+<p>And the figure below displays them in graphical form.</p>
+
+      </main>
+    </div>
+
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-15377021-8', 'leosystems.github.io');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

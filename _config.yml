@@ -1,0 +1,40 @@
+# Server
+# ------
+
+encoding:     UTF-8
+markdown: redcarpet
+url:          http://leosystems.github.io
+baseurl:      # empty
+permalink:    pretty
+exclude:
+  - README.md
+
+# Defaults
+# --------
+
+defaults:
+  - scope:
+      path:   ""
+      type:   pages
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post"
+
+# Meta data
+# ---------
+
+title:        Low Earth Orbit
+author:       Javier Peralta Muñoz
+description:  All about Low Earth Orbit systems
+keywords:     satellites
+language:     en
+
+# Links
+# -----
+
+twitter:      leosystems
+_github:      leosystems # `site.github` is used by GitHub pages
