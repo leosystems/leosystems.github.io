@@ -8,5 +8,9 @@
     - name: Data communications and networking, (Behrouz A. Forouzan, DeAnza College)
       url: http://highered.mheducation.com/sites/844815617x/student_view0/index.html
       star: y
+
+    - name: Overview of LEO Satellite Systems, 1999 International Symposium on Advanced Radio Technologies
+      url: http://www.its.bldrdoc.gov/media/30335/red_s.pdf
+      star: y
 - name: A video that explains some basic concepts
   id: video
