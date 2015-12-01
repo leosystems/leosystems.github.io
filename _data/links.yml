@@ -8,3 +8,5 @@
     - name: Data communications and networking, (Behrouz A. Forouzan, DeAnza College)
       url: http://highered.mheducation.com/sites/844815617x/student_view0/index.html
       star: y
+- name: A video that explains some basic concepts
+  id: video
