@@ -1,0 +1,15 @@
+#dragThis {
+    width: 6em;
+    height: 6em;
+    padding: 0.5em;
+    border: 3px solid #ccc;
+    background-image: url("css-satellite.png");
+    border-radius: 0 1em 1em 1em;
+}
+
+.box{
+  width:700px; height:100px;
+  border:solid 5px #000;
+  border-color:#000 transparent transparent transparent;
+  border-radius: 30%/80px 80px 0 0;
+}

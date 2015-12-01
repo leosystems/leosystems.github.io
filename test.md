@@ -1,105 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>
-      Test yourself &middot; 
-      Low Earth Orbit
-    </title>
-    <meta name="author" content="Javier Peralta Muñoz">
-    <meta name="description" content="All about Low Earth Orbit systems">
-    <meta name="keywords" content="satellites">
-    <meta name="robots" content="noodp,noydir">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-    <script type="text/javascript"
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
-    <meta charset=utf-8 />
-    <title>JS Bin</title>
-    <style id="jsbin-css">
-    #container { width: 450px; height: 500px; background: #ccc; }
-    #droppable { width: 450px; height: 100px; background: #ff0000; }
-    .draggable { width: 90px; height: 90px; padding: 0.5em; float: left; margin: 0 10px 10px 0; background:yellow; }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-
-      <!-- Header -->
-      <header class="header">
-        <h1>
-          Low Earth Orbit
-        </h1>
-        <p>
-          <img class="img-thumbnail logo" src="/assets/img/logo.png" width="150" height="150" alt="Low Earth Orbit">
-        </p>
-        <p>All about Low Earth Orbit systems</p>
-        <a class="sr-only" href="#content">Skip to main content</a>
-        <ul class="list-inline">
-          <li>
-            <i class="fa fa-home text-success"></i>
-            <a href="/">Home</a>
-          </li>
-          
-          
-          
-          
-          <li>
-            <i class="fa fa-flask text-success"></i>
-            <a href="/calculator/">Calculator</a>
-          </li>
-          
-          
-          
-          <li>
-            <i class="fa fa-picture-o text-success"></i>
-            <a href="/history/">History of LEO systems</a>
-          </li>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <li>
-            <i class="fa fa-link text-success"></i>
-            <a href="/links/">References</a>
-          </li>
-          
-          
-          
-          
-          
-          
-          
-          <li>
-            <i class="fa fa-pencil text-success"></i>
-            <a href="/test/">Test yourself</a>
-          </li>
-          
-          
-          <li>
-            <i class="fa fa-github text-success"></i>
-            <a href="https://github.com/leosystems">GitHub</a>
-          </li>
-        </ul>
-      </header>
-
-      <hr>
-
-      <!-- Content -->
-      <main id="content">
-        <h2>Test yourself</h2>
-        <p class="lead"></p>
-        <script type="text/javascript">
+---
+title: Test yourself
+slug: test
+lead:
+icon: pencil
+---
+<script type="text/javascript">
 CorrectAnswers = new Array();
 CorrectAnswers[0]=4;
 CorrectAnswers[1]=1;
@@ -138,11 +43,11 @@ var x = 0;
 var Score = 0;
 for (i=0; i<CorrectAnswers.length; i++){
 if (document.Quizform.elements[i*2].selectedIndex == CorrectAnswers[i]){
-    document.Quizform.elements[(i*2)+1].value = rightchar;
-    TotalCorrect++;
+	document.Quizform.elements[(i*2)+1].value = rightchar;
+	TotalCorrect++;
 }
 else{
-    document.Quizform.elements[(i*2)+1].value = wrongchar;
+	document.Quizform.elements[(i*2)+1].value = wrongchar;
 }
 }
 Score = Math.floor((TotalCorrect*100)/CorrectAnswers.length);
@@ -150,55 +55,55 @@ document.checkForm.Scorebox.value = Score + '%';
 }
 </script>
 
-<p><center>
+<center>
 <form name="Quizform">
 <center>
-  <table border=0 cellpadding=5></p>
+  <table border=0 cellpadding=5>
 
-<p><tr>
+<tr>
 <td>
-    1) On October 4, 1957, what satellite was launched,
-    becoming the first satellite to officially orbit the Earth?
+	1) On October 4, 1957, what satellite was launched,
+	becoming the first satellite to officially orbit the Earth?
 </td>
 <td><b>
-    <select name="0"><option>Choose from here:
-        <option>Vanguard 1<option>Explorer 1<option>Oscar 10<option>Sputnik 1
-    </select>
+	<select name="0"><option>Choose from here:
+		<option>Vanguard 1<option>Explorer 1<option>Oscar 10<option>Sputnik 1
+	</select>
 </b></td>
 <td>
-    <input type="text" name="1" size=3 maxlength=3>
+	<input type="text" name="1" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
-    2) Which type of modulation is used in satellite communication?
+	2) Which type of modulation is used in satellite communication?
 </td>
 <td><b>
 <select name="2"><option>Choose from here:
-     <option>AM <option>FM <option>FSK <option>PSK
+	 <option>AM <option>FM <option>FSK <option>PSK
 </select>
 </b></td>
 <td>
 <input type="text" name="3" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
-    3) What non-profit organization is made up of worldwide ham radio operators
-    that use their own membership-supported satellites?
+	3) What non-profit organization is made up of worldwide ham radio operators
+	that use their own membership-supported satellites?
 </td>
 <td><b>
-    <select name="4"> <option>Choose from here:
+	<select name="4"> <option>Choose from here:
 <option>AMSAT<option>GLOBALSAT<option>HAMSAT<option>FUTURESAT
 </select>
 </b></td>
 <td> <input type="text" name="5" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 4) The signal from a satellite is normally aimed at a specific area called the
 </td>
@@ -210,9 +115,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="7" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 5) There is (are) _____ orbit(s) for a GEO satellite.
 </td>
@@ -224,9 +129,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="9" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 6) MEO satellites are located at altitudes between km.
 </td>
@@ -238,9 +143,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="11" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 7) LEO satellites are normally below an altitude of ________ km.
 </td>
@@ -252,9 +157,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="13" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 8) ______ is based on a principle called trilateration.
 </td>
@@ -266,9 +171,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="15" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 9) Low-Earth-orbit (LEO) satellites have _____ orbits.
 </td>
@@ -280,9 +185,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="17" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 10) ________ satellites provide time and location information for vehicles and ships.
 </td>
@@ -294,9 +199,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="19" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 11) Iridium satellites are ________satellites.
 </td>
@@ -308,9 +213,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="21" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 12) ________ satellites can provide direct universal voice and data communications for handheld terminals.
 </td>
@@ -322,9 +227,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="23" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 13) ________ satellites will provide universal broadband Internet access.
 </td>
@@ -336,9 +241,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="25" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 14) Low-Earth-orbit (LEO) satellites have _____ orbits.
 </td>
@@ -350,9 +255,9 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="27" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p><tr>
+<tr>
 <td>
 15) The big LEOs operate between
 </td>
@@ -364,12 +269,12 @@ document.checkForm.Scorebox.value = Score + '%';
 <td>
 <input type="text" name="29" size=3 maxlength=3>
 </td>
-</tr></p>
+</tr>
 
-<p></table></center></form></p>
+</table></center></form>
 
-<p><P><form name="checkForm"> <center> Your score is: <input type=text name="Scorebox" size=4 maxlength=4><P>
-<br><input type="button" value="Check" onClick="checkAnswer()"> </center></form><P></p>
+<P><form name="checkForm"> <center> Your score is: <input type=text name="Scorebox" size=4 maxlength=4><P>
+<br><input type="button" value="Check" onClick="checkAnswer()"> </center></form><P>
 
 <h2 style="text-align:left;">
 Drag me to the correct place!
@@ -377,107 +282,106 @@ Drag me to the correct place!
 
 <style>
 #gameboard {
-    position: relative;
-    width: 750px;
-    height: 350px;
-    z-index: 1;
-    border: solid 0.5px gray;}
+	position: relative;
+	width: 750px;
+	height: 350px;
+	z-index: 1;
+	border: solid 0.5px gray;}
 
 #draggable1 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    color: black;
-    z-index: 3;
-    left: 0px;
-    margin-top: 0px;}
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	color: black;
+	z-index: 3;
+	left: 0px;
+	margin-top: 0px;}
 
 #droppable1 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-left: 0px;
-    margin-top: 200px;
-    z-index: 2;
-    color: white;
-    font-weight: bold;
-    background-color: gray;}
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	margin-left: 0px;
+	margin-top: 200px;
+	z-index: 2;
+	color: white;
+	font-weight: bold;
+	background-color: gray;}
 
 #draggable2 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    color: black;
-    z-index: 3;
-    left: 200px;
-    top: 0px;}
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	color: black;
+	z-index: 3;
+	left: 200px;
+	top: 0px;}
 
 #droppable2 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 200px;
-    top: 200px;
-    z-index: 2;
-    color: white;
-    font-weight: bold;
-    background-color: gray;}
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 200px;
+	top: 200px;
+	z-index: 2;
+	color: white;
+	font-weight: bold;
+	background-color: gray;}
 
 #draggable3 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    color: black;
-    z-index: 3;
-    left: 400px;
-    top: 0px;}
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	color: black;
+	z-index: 3;
+	left: 400px;
+	top: 0px;}
 
 #droppable3 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 400px;
-    top: 200px;
-    z-index: 2;
-    color: white;
-    font-weight: bold;
-    background-color: gray;}
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 400px;
+	top: 200px;
+	z-index: 2;
+	color: white;
+	font-weight: bold;
+	background-color: gray;}
 
 #draggable4 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    color: black;
-    z-index: 3;
-    left: 600px;
-    top: 0px;}
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	color: black;
+	z-index: 3;
+	left: 600px;
+	top: 0px;}
 
 #droppable4 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 600px;
-    top: 200px;
-    z-index: 2;
-    color: white;
-    font-weight: bold;
-    background-color: gray;}
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 600px;
+	top: 200px;
+	z-index: 2;
+	color: white;
+	font-weight: bold;
+	background-color: gray;}
 
 </style>
-
 <script>
 var counter = 0;
 function verify()
 {
 if(counter > 3){
-        alert('Well done!');
+		alert('Well done!');
 }
 }
 $(function() {
     $( "#draggable1" ).draggable();
     $( "#droppable3" ).droppable({
         drop: function( event, ui ) {
-    if ($(ui.draggable).attr("id") == 'draggable1'){
+	if ($(ui.draggable).attr("id") == 'draggable1'){
     $( this )
     .find( "p" )
         .html( "Dropped!" );
@@ -516,7 +420,7 @@ if ($(ui.draggable).attr("id") == 'draggable2'){
     $("#result").html(counter);
     $("#draggable2").css("margin-left", x);
     $("#draggable2").css("margin-top", y);
-        $("#draggable2").draggable({ disabled: true });
+		$("#draggable2").draggable({ disabled: true });
     verify();
 }
 else{
@@ -542,7 +446,7 @@ if ($(ui.draggable).attr("id") == 'draggable3'){
     $("#result").html(counter);
     $("#draggable3").css("margin-left", x);
     $("#draggable3").css("margin-top", y);
-        $("#draggable3").draggable({ disabled: true });
+		$("#draggable3").draggable({ disabled: true });
     verify();
 }
 else{
@@ -568,7 +472,7 @@ if ($(ui.draggable).attr("id") == 'draggable4'){
     $("#result").html(counter);
     $("#draggable4").css("margin-left", x);
     $("#draggable4").css("margin-top", y);
-        $("#draggable4").draggable({ disabled: true });
+		$("#draggable4").draggable({ disabled: true });
     verify();
 }
 else{
@@ -581,13 +485,11 @@ else{
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
-
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
 
 <div id="result">...</div>
-
 <div id="gameboard">
 <div id="draggable1"><br><br>$\displaystyle\sqrt{\frac{k}{R_E+h}}$</div>
 <div id="droppable1"><p><br><br>Angular speed</p></div>
@@ -598,19 +500,3 @@ else{
 <div id="draggable4"><br><br>$\displaystyle\frac{2}{1-\cos\gamma}$</div>
 <div id="droppable4"><p><br><br>Orbital period</p></div>
 </div>
-
-      </main>
-    </div>
-
-    <!-- Google Analytics -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-15377021-8', 'leosystems.github.io');
-  ga('send', 'pageview');
-</script>
-
-  </body>
-</html>

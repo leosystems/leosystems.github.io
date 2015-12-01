@@ -1,5 +1,6 @@
 # leosystems.github.io
 
-> @Leosystems's site
+> @LEOsystems's site
+> @author: Javier Peralta Muñoz
 
-Information about LEO systems
+Information about Low Earth Orbit satellites

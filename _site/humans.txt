@@ -16,6 +16,16 @@
     <script type="text/javascript"
       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+    <meta charset=utf-8 />
+    <title>JS Bin</title>
+    <style id="jsbin-css">
+    #container { width: 450px; height: 500px; background: #ccc; }
+    #droppable { width: 450px; height: 100px; background: #ff0000; }
+    .draggable { width: 90px; height: 90px; padding: 0.5em; float: left; margin: 0 10px 10px 0; background:yellow; }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -48,12 +58,8 @@
           
           <li>
             <i class="fa fa-picture-o text-success"></i>
-            <a href="/history/">History of satellites</a>
+            <a href="/history/">History of LEO systems</a>
           </li>
-          
-          
-          
-          
           
           
           

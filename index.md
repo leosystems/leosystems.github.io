@@ -93,9 +93,9 @@ In this system of units, the values for the gravitational constant and the mass 
 $$G = 6.67259\cdot 10^{-11} \mbox{m}^3\mbox{kg}^{-1}\mbox{s}^{-2},$$
 
 with \\(M = 5.9736\cdot 10^{24}\\) kg. It is interesting to note that the uncertainty in the measured value for \\(G\\) is larger than the uncertainty in the measurement of the product of \\(G\\) times \\(M\\), which is given as:
-
+<p id="kepler">
 $$G\cdot M = 3.9860 \times \cdot 10^{14} \mbox{m}^3\mbox{s}^{-2}$$
-
+</p>
 A table of values computed from the above formulae is shown below. Note that the units have been converted into the more typically used quantities before display.
 
                LEO CIRCULAR ORBIT PARAMETERS
@@ -117,5 +117,3 @@ A table of values computed from the above formulae is shown below. Note that the
             1300      7.21      111.4      12.92
             1400      7.16      113.6      12.67
             1500      7.12      115.8      12.43
-
-And the figure below displays them in graphical form.
