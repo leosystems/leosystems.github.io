@@ -67,8 +67,6 @@
           
           
           
-          
-          
           <li>
             <i class="fa fa-link text-success"></i>
             <a href="/links/">References</a>
