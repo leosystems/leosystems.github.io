@@ -245,11 +245,11 @@ document.checkForm.Scorebox.value = Score + '%';
 
 <tr>
 <td>
-14) Low-Earth-orbit (LEO) satellites have _____ orbits.
+14) ____ system is positioned below the lower Van Allen belt
 </td>
 <td><b>
 <select name="26"> <option>Choose from here:
-<option>Equatorial <option>Polar <option>Inclined <option>None of the above
+<option>MEO<option>LEO<option>GEO<option>HEO
 </select>
 </b></td>
 <td>
