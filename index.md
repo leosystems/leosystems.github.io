@@ -35,7 +35,7 @@ Any activity that takes place in outer space should be performed while recognizi
   - Upper altitude \\(=\\) geostationary altitude \\(+200\\) km.
   - \\(-15 \mbox{ degrees }  \leq \mbox{ latitude } \leq +15 \mbox{ degrees }\\)
 
-  <img class="centered" src="/assets/img/art/regions.jpg" />
+  <img class="centered" src="/assets/img/regions.jpg" />
 
 
 #### Geostationary Earth Orbit (GEO)
