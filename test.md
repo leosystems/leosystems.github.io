@@ -7,7 +7,7 @@ icon: pencil
 <script type="text/javascript">
 CorrectAnswers = new Array();
 CorrectAnswers[0]=4;
-CorrectAnswers[1]=2;
+CorrectAnswers[1]=4;
 CorrectAnswers[2]=1;
 CorrectAnswers[3]=3;
 CorrectAnswers[4]=1;
@@ -81,7 +81,7 @@ document.checkForm.Scorebox.value = Score + '%';
 </td>
 <td><b>
 <select name="2"><option>Choose from here:
-	 <option>Various <option>FM <option>FSK <option>PSK
+	  <option>FM <option>FSK <option>PSK<option>Various
 </select>
 </b></td>
 <td>
