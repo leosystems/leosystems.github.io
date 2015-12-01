@@ -6,7 +6,7 @@ icon: flask
 ---
 
 <style>
-#Xpos,#Ypos,#Angle, #ElAngle {
+#Xpos,#height,#Angle, #ElAngle, #distanceEdge {
     font-size: 16px;
     color: red;
 }
@@ -85,11 +85,15 @@ With \\(k\\) being the Kepler's constant as in <A href="/#kepler">here</a>
 </p>
 </div>
 <p>
+
+<div>
+<h3>Drag the satellite to see the changes (elevation angle is 10º)</h3>
+</div>
 <div id="box" class="curve">
         <div id="dragx" class="drag">
-        <p id="Ypos"><p>
+        <p id="height"><p>
         <p id="Angle"><p>
-        <p id="ElAngle"><p>
+        <p id="distanceEdge"><p>
         </ul>
         </div>
 </div>
@@ -107,14 +111,15 @@ $(function () {
                     var x = offset.left;
                     var y = offset.top;
                     var xPos = (offset.left-550)*1.2;
-                    var yPos = (-offset.top+2500)*1.2;
+                    var height = (-offset.top+2500)*1.2*1000;//meters
                     var radEarth = 6370000;
-                    var elangle = Math.atan(yPos/xPos);
-                    var degelangle = Math.abs(180/Math.PI*elangle);
-                    var angle = 180/Math.PI*(Math.acos((radEarth/(radEarth+yPos)*Math.cos(elangle)))-elangle);
-                    $('#ElAngle').text('Elevation angle: ' + degelangle+ 'º');
-                    $('#Angle').text('Central angle: ' + angle+'º');
-                    $('#Ypos').text('Height: ' + yPos+' km');
+                    var degelangle = 10;
+                    var elangle = toRadians(degelangle);
+                    var centAng = Math.acos((radEarth/(radEarth+height)*Math.cos(elangle)))-elangle;
+                    var distanceEdge =  Math.sqrt((radEarth*radEarth)+((radEarth+height)*(radEarth+height))-2*radEarth*(radEarth+height)*Math.cos(centAng));
+                    $('#distanceEdge').text('Distance to the edge: ' + distanceEdge/1000+ ' km');
+                    $('#Angle').text('Central angle: ' + toDegrees(centAng) +'º');
+                    $('#height').text('Height: ' + height/1000+' km');
                 },
         });
 });
@@ -163,7 +168,7 @@ $(function () {
         sphericalCap.innerHTML = '';
         numberSat.innerHTML = '';
 
-        if(isNaN(elangle) || isNaN(height)) {
+        if(isNaN(elangle) || isNaN(height) || height < 0) {
             alert('Invalid parameters. Try with a positive length or an angle lower than 180º');
             return;
         }
